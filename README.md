@@ -137,6 +137,7 @@ The comparison highlighted differences between CFD predictions and experimental 
 **Note.**
 
 For the torque plots, the experimental data detracted the windage and friction losses, as quoted into the Thesis work. For this reason a small coefficient of 0.025Nm was taking into account into the final CFD results:
+
 torque_aero     = test.data(:,9)+0.025;
 
 ## Softwares
