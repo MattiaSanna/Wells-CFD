@@ -140,8 +140,9 @@ efficiency = (torque_aero .* omega) ./ (deltaP .* Q);
 
 figure(1)
 plot(flow_coef , torque_coef, 'o', 'MarkerFaceColor', cyano, 'MarkerEdgeColor', cyano, 'MarkerSize', marker_size)
-xlabel('Flow Coefficient \phi^*')
-ylabel('Torque Coefficient T^*')
+xlabel('Flow Coefficient')
+ylabel('Torque Coefficient')
+legend('Experimental data', 'CFD',  'Location', 'northwest');
 ylim([-0.005 0.1]);
 xlim([-0.3 0.3]);
 
@@ -155,8 +156,9 @@ axis square  % or pbaspect([1 1 1])
 
 figure(2)
 plot(flow_coef ,press_coef, 'o', 'MarkerFaceColor', cyano, 'MarkerEdgeColor', cyano, 'MarkerSize', marker_size)
-xlabel('Flow Coefficient \phi^*')
-ylabel('Pressure Coefficient p^*')
+xlabel('Flow Coefficient')
+ylabel('Pressure Coefficient')
+legend('Experimental data', 'CFD',  'Location', 'northwest');
 grid on
 xlim([-0.3 0.3]);
 
@@ -170,10 +172,11 @@ axis square  % or pbaspect([1 1 1])
 
 figure(3)
 plot(flow_coef, efficiency, 'o', 'MarkerFaceColor', cyano, 'MarkerEdgeColor', cyano, 'MarkerSize', marker_size)
-xlabel('Flow Coefficient \phi^*')
-ylabel('Efficiency \eta')
+xlabel('Flow Coefficient')
+ylabel('Efficiency')
 ylim([0 1]);
 xlim([-0.25 0.25]);
+legend('Experimental data', 'CFD',  'Location', 'northwest');
 grid on
 
 axis square  % or pbaspect([1 1 1])
