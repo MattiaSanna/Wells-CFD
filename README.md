@@ -107,15 +107,27 @@ The MRF approach allowed the rotating turbine to be simulated within a stationar
 
 The exact boundary conditions of the experimental tests were replicated:
 
-**Rotational speed**: 3600 RMP
-**Inlet velocity**: Ranging from 0 to 12 m/s
-**Inlet and outlet turbulence**: 2% - 7%
-**Air density**: 1.1685 kg/m³
-**Air viscosity**: 1.854e-5 kg/ms
-
-
-
-## 7. Post-Processing and MATLAB Analysis
+| Category | Setting | Value |
+|---|---|---|
+| **Solver** | Type | Pressure-based, steady-state |
+| | Pressure-velocity coupling | [e.g. Coupled / SIMPLE: fill in] |
+| | Spatial discretisation | Second-order upwind (momentum, k, ω) |
+| **Turbulence** | Model | SST k-ω |
+| | Inlet turbulence intensity | 2 % |
+| | Outlet (backflow) turbulence intensity | 7 % |
+| | Turbulent viscosity ratio | [fill in] |
+| **Rotation** | Rotational speed | 3600 rpm (≈ 377 rad/s) |
+| | Rotating zone | MRF, 2 chords long |
+| | Domain sector | 60° rotational periodicity |
+| **Boundaries** | Inlet | Velocity inlet, 0–12 m/s |
+| | Outlet | Pressure outlet, 0 Pa gauge |
+| | Blade, hub | No-slip, rotating with the frame |
+| | Casing | No-slip, stationary in the absolute frame |
+| | Tip clearance | 1 mm |
+| **Fluid (air)** | Density | 1.1685 kg/m³ (constant) |
+| | Dynamic viscosity | 1.854 × 10⁻⁵ Pa·s |
+| **Convergence** | Residual criterion | [fill in, e.g. 1e-5] |
+| | Monitored quantities | Torque, mass imbalance |## 7. Post-Processing and MATLAB Analysis
 
 Fluent results were exported for further analysis in MATLAB using Python scripts for the generation of the .mat files.
 
