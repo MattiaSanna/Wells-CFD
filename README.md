@@ -124,7 +124,7 @@ Numerical results were then compared with experimental measurements to evaluate 
 
 ## Model Validation
 
-The numerical model was validated by comparing CFD predictions against the experimental results reported in the reference thesis through MATLAB plots.
+The numerical model was validated by comparing CFD predictions against the experimental results reported in the reference thesis through MATLAB plots and exported into the Results folder in the repository. 
 
 Validation focused on:
 - **Torque, pressure drop and efficiency:** comparing simulated and experimental torque across different inlet velocities.
