@@ -112,7 +112,7 @@ The MRF approach allowed the rotating turbine to be simulated within a stationar
 
 ## 7. Post-Processing and MATLAB Analysis
 
-Fluent results were exported for further analysis in MATLAB.
+Fluent results were exported for further analysis in MATLAB using Python scripts for the generation of the .mat files.
 
 The post-processing workflow calculated:
 - Flow coefficient
