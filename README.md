@@ -134,7 +134,8 @@ Residual convergence and the stability of monitored quantities were checked to e
 
 The comparison highlighted differences between CFD predictions and experimental measurements, providing a basis for assessing the limitations of the numerical setup and identifying areas for further improvement.
 
-**Note. 
+**Note.**
+
 For the torque plots, the experimental data detracted the windage and friction losses, as quoted into the Thesis work. For this reason a small coefficient of 0.025Nm was taking into account into the final CFD results:
 torque_aero     = test.data(:,9)+0.025;
 
