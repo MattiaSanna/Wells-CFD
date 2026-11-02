@@ -106,28 +106,34 @@ The simulations were performed in **ANSYS Fluent** using:
 The MRF approach allowed the rotating turbine to be simulated within a stationary computational domain.
 
 The exact boundary conditions of the experimental tests were replicated:
+## 6. CFD Setup
+
+The simulations were performed in **ANSYS Fluent**. The boundary conditions replicate the experimental tests.
 
 | Category | Setting | Value |
 |---|---|---|
 | **Solver** | Type | Pressure-based, steady-state |
-| | Pressure-velocity coupling | [e.g. Coupled / SIMPLE: fill in] |
+| | Pressure-velocity coupling | [fill in, e.g. Coupled / SIMPLE] |
 | | Spatial discretisation | Second-order upwind (momentum, k, ω) |
 | **Turbulence** | Model | SST k-ω |
-| | Inlet turbulence intensity | 2 % |
-| | Outlet (backflow) turbulence intensity | 7 % |
-| | Turbulent viscosity ratio | [fill in] |
+| | Turbulence specification | Intensity and viscosity ratio |
+| | Turbulent intensity (inlet and outlet) | 2 % |
+| | Turbulent viscosity ratio (inlet and outlet) | 7 |
 | **Rotation** | Rotational speed | 3600 rpm (≈ 377 rad/s) |
-| | Rotating zone | MRF, 2 chords long |
+| | Rotating zone | MRF, 2 chords long (144 mm) |
+| | Interface | MRF with mesh interface |
 | | Domain sector | 60° rotational periodicity |
+| **Domain** | Inlet duct | 3 chords (216 mm), stationary |
+| | Outlet duct | 5 chords (360 mm), stationary |
+| | Tip clearance | 1 mm |
 | **Boundaries** | Inlet | Velocity inlet, 0–12 m/s |
 | | Outlet | Pressure outlet, 0 Pa gauge |
 | | Blade, hub | No-slip, rotating with the frame |
 | | Casing | No-slip, stationary in the absolute frame |
-| | Tip clearance | 1 mm |
 | **Fluid (air)** | Density | 1.1685 kg/m³ (constant) |
 | | Dynamic viscosity | 1.854 × 10⁻⁵ Pa·s |
 | **Convergence** | Residual criterion | [fill in, e.g. 1e-5] |
-| | Monitored quantities | Torque, mass imbalance |## 7. Post-Processing and MATLAB Analysis
+| | Monitored quantities | Torque, mass imbalance |
 
 Fluent results were exported for further analysis in MATLAB using Python scripts for the generation of the .mat files.
 
