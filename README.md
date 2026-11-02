@@ -113,7 +113,7 @@ The simulations were performed in **ANSYS Fluent**. The boundary conditions repl
 | Category | Setting | Value |
 |---|---|---|
 | **Solver** | Type | Pressure-based, steady-state |
-| | Pressure-velocity coupling | [fill in, e.g. Coupled / SIMPLE] |
+| | Pressure-velocity coupling | Coupled |
 | | Spatial discretisation | Second-order upwind (momentum, k, ω) |
 | **Turbulence** | Model | SST k-ω |
 | | Turbulence specification | Intensity and viscosity ratio |
@@ -132,7 +132,7 @@ The simulations were performed in **ANSYS Fluent**. The boundary conditions repl
 | | Casing | No-slip, stationary in the absolute frame |
 | **Fluid (air)** | Density | 1.1685 kg/m³ (constant) |
 | | Dynamic viscosity | 1.854 × 10⁻⁵ Pa·s |
-| **Convergence** | Residual criterion | [fill in, e.g. 1e-5] |
+| **Convergence** | Residual criterion | 1e-4 |
 | | Monitored quantities | Torque, mass imbalance |
 
 Fluent results were exported for further analysis in MATLAB using Python scripts for the generation of the .mat files.
