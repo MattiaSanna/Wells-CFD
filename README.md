@@ -64,28 +64,23 @@ A **60° periodic sector** was used to model a single blade passage, reducing co
 
 ### 4.2 Multiple Reference Frame (MRF)
 
-A steady Multiple Reference Frame formulation was selected to represent the rotating turbine.
+A steady Multiple Reference Frame (MRF) formulation was selected to represent the rotating turbine.
 
-In this approach, the governing equations are solved in different reference frames within the same computational domain.
+The governing equations are solved in different reference frames within the same computational domain. The rotor region is assigned a rotating reference frame, while the inlet and outlet regions remain stationary. This allows rotational effects to be included in a steady-state simulation without moving the mesh at every time step. The approach is widely used in turbomachinery simulations because it greatly simplifies the modelling of rotating machinery.
 
-The rotor region is assigned a rotating reference frame, while the inlet and outlet regions remain stationary.
+| Domain | Frame | Axial length |
+|---|---|---|
+| Inlet duct | Stationary | 3 chords (216 mm) |
+| Rotor region | Rotating (MRF) | 2 chords (144 mm) |
+| Outlet duct | Stationary | 5 chords (360 mm) |
 
-This allows rotational effects to be included in a steady-state simulation without explicitly moving the mesh at every time step.
-
-This approach is widely used in turbomachinery simulations and allows to simplify themodelling of rotating turbomachinery.
+A tip clearance of 1 mm was modelled between the blade tips and the casing. Because the casing is stationary in the absolute frame, its wall was set to zero absolute rotational speed inside the rotating zone.
 
 ### 4.3 Rotational Periodicity
 
-To reduce computational requirements, the complete rotor was not simulated.
+To reduce computational requirements, only a single-blade sector of the rotor was simulated.
 
-Instead, a single-blade sector was considered.
-
-For a six-blade rotor, the angular sector is 60°.
-
-Periodic boundary conditions were applied to the two circumferential faces of the sector.
-
-This allows the numerical model to represent the complete rotor under the assumption of rotational periodicity.
-
+For a six-blade rotor the sector angle is 360°/6 = 60°. Rotational periodic boundary conditions were applied to the two circumferential faces of the sector, so the model represents the full rotor under the assumption that all blade passages behave identically. This assumption holds well in attached flow but becomes less reliable when stall introduces asymmetric or unsteady separation.
 
 ## 5. Mesh Generation
 
