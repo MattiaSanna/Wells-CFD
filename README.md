@@ -110,6 +110,16 @@ The simulations were performed in **ANSYS Fluent** using:
 
 The MRF approach allowed the rotating turbine to be simulated within a stationary computational domain.
 
+The exact boundary conditions of the experimental tests were replicated:
+
+**Rotational speed**: 3600 RMP
+**Inlet velocity**: Ranging from 0 to 12 m/s
+**Inlet and outlet turbulence**: 2% - 7%
+**Air density**: 1.1685 kg/m³
+**Air viscosity**: 1.854e-5 kg/ms
+
+
+
 ## 7. Post-Processing and MATLAB Analysis
 
 Fluent results were exported for further analysis in MATLAB using Python scripts for the generation of the .mat files.
