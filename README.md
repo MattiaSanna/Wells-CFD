@@ -158,8 +158,6 @@ The comparison highlighted differences between CFD predictions and experimental 
 
 `torque_aero = test.data(:,9) + 0.03;`
 
-The offset was kept constant because the rotational speed was fixed at 3600 rpm. It is a single-point correction at zero flow, so agreement at φ = 0 is imposed and that point is excluded from the error statistics. Without the offset, the mean torque error would be X% instead of Y%.
-
 ## Softwares
 
 - ANSYS Fluent
