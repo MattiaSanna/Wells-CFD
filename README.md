@@ -116,7 +116,6 @@ The study was carried out at the peak-efficiency operating point, φ = 0.15 (att
 | Fine (selected) | 880 | 0.2908 | 0.058 % |
 | Very fine | 1041 | 0.2907 | – |
 
-The convergence is slightly non-monotonic (torque rises from coarse to fine, then drops marginally), so the observed order of convergence and a Richardson extrapolation cannot be reliably computed. A conservative Grid Convergence Index, assuming second-order convergence (p = 2, safety factor 3), gives about **1.5 %** on the finest mesh. This is much smaller than the 16.1 % deviation from the experiment, so the discretisation error cannot explain the deviation. The estimate was made at a single operating point in attached flow.
 
 ### 7.2 Near-wall resolution
 
