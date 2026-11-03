@@ -146,10 +146,6 @@ Numerical results were then compared with experimental measurements to evaluate 
 
 The numerical model was validated by comparing CFD predictions against the experimental results reported in the reference thesis through MATLAB plots and exported into the Results folder in the repository. 
 
-Validation focused on:
-- **Torque, pressure drop and efficiency:** comparing simulated and experimental torque across different inlet velocities.
-- **Flow behaviour:** examining pressure and velocity distributions around the blades to verify that the simulated aerodynamic behaviour was physically consistent.
-
 Residual convergence and the stability of monitored quantities were checked to evaluate numerical convergence.
 
 The comparison highlighted differences between CFD predictions and experimental measurements, providing a basis for assessing the limitations of the numerical setup and identifying areas for further improvement.
