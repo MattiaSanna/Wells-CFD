@@ -1,9 +1,4 @@
 
-%SECOND PLOT
-
-
-%Assegnare variabili con i dati dal file
-
 info
 
 
@@ -113,7 +108,7 @@ air_velocity    = test.data(:,4);
 deltaP          = test.data(:,6);
 omega_rpm       = test.data(:,7);
 omega           = (omega_rpm) * 2*pi  / (60);
-torque_aero     = test.data(:,9)+0.025;
+torque_aero     = test.data(:,9)+0.03;
 time            = test.data(:,1);
 Cz              = test.data(:,4);
 
