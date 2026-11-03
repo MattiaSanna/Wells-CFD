@@ -39,7 +39,7 @@ The geometry was reconstructed from the dimensions reported in the experimental 
 | Hub radius R<sub>h</sub> | 95 mm |
 | Hub-to-tip ratio | 0.76 |
 | Mean radius r<sub>mean</sub> | 110 mm |
-| Solidity σ = Zc / (2π r<sub>mean</sub>) | 0.625 |
+| Solidity σ  | 0.625 |
 
 ## 4. Computational Domain — Multiple Reference Frame
 
