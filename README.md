@@ -97,7 +97,7 @@ A grid independence study was also performed using four mesh resolutions, rangin
 
 The simulations were performed in **ANSYS Fluent** using:
 - Pressure-based, steady-state solver
-- SST \(k-\omega\) turbulence model
+- SST \ k-ω turbulence model
 - Multiple Reference Frame (MRF)
 - Velocity inlet and pressure outlet
 - No-slip blade walls
@@ -166,7 +166,7 @@ The offset was kept constant because the rotational speed was fixed at 3600 rpm.
 ## Softwares
 
 - ANSYS Fluent
-- ANSYS DesignMdoler
+- ANSYS DesignModler
 - Python
 - MATLAB
 - SolidWorks
