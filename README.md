@@ -154,7 +154,7 @@ Residual convergence and the stability of monitored quantities were checked to e
 
 The comparison highlighted differences between CFD predictions and experimental measurements, providing a basis for assessing the limitations of the numerical setup and identifying areas for further improvement.
 
-**Note on the torque comparison.** The experimental torque is corrected for windage and friction losses, so it is zero at zero flow. The CFD torque is not: at 0 m/s and 3600 rpm it gives −0.03 N·m, due to the aerodynamic drag of the rotating blades in still air. To compare like with like, a constant offset of 0.03 N·m was added to the CFD torque so that both curves pass through zero at zero flow:
+**Note on the torque comparison.** The experimental torque is corrected for windage and friction losses, so it is zero at zero flow. The CFD torque is not: at 0 m/s and 3600 rpm it gives −0.03 N·m, due to the aerodynamic drag of the rotating blades in still air.
 
 `torque_aero = test.data(:,9) + 0.03;`
 
