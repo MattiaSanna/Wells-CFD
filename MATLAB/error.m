@@ -1,5 +1,6 @@
 info
 
+%exp data
 
 load('Measurements/experimental.mat');
 
@@ -34,9 +35,10 @@ torque_coef = torque_aero ./ (rho .* (omega).^2 .* tip_radius^5);
 
 press_coef = deltaP ./ (rho .* (omega).^2 * tip_radius.^2);
 
-efficency = (torque_aero .* omega) ./ (deltaP .* Q);
+efficiency = (torque_aero .* omega) ./ (deltaP .* Q);
 
 %U at the avergae blade span
+
 U_aver = 2 * pi * r_med * omega_rpm / 60;
 
 
@@ -44,7 +46,7 @@ U_aver = 2 * pi * r_med * omega_rpm / 60;
 
 
 
-
+%CFD
 
 
 info
@@ -97,7 +99,14 @@ T_err = ((torque_coef_CFD-torque_coef_int)./torque_coef_int).*100;
 
 
 valid = abs(torque_coef_int) > 0.10 * max(abs(torque_coef_int));
-MAPE = mean(abs(T_err(valid)))
+MAPE_Torque = mean(abs(T_err(valid)))
 
+
+
+press_coef_int = interp1(flow_coef, press_coef, flow_coef_CFD, 'linear');
+P_err = ((press_coef_CFD-press_coef_int)./press_coef_int).*100;
+
+valid = abs(press_coef_int) > 0.10 * max(abs(press_coef_int));
+MAPE_Press = mean(abs(P_err(valid)))
 
 
