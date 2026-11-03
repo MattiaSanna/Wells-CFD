@@ -152,12 +152,6 @@ CFD predictions were compared point by point with the experimental data of the r
 torque_aero = test.data(:,9) + 0.03;
 ```
 
-The offset is a single-point correction at zero flow, so agreement at φ = 0 is imposed and that point is excluded from the error statistics. It is assumed constant because the rotational speed is fixed at 3600 rpm.
-
-<!-- TODO: add "Without the offset, the mean torque error would be X % instead of 16.1 %." -->
-
-**Limits of the comparison.** The comparison covers a single configuration and does not include experimental uncertainty bands, so it shows agreement within the stated errors and is not a general validation of the model.
-
 ## Repository Structure
 
 | Folder | Content |
