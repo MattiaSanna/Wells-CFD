@@ -6,7 +6,7 @@ This project focuses on the numerical replication of experimental Wells turbine 
 
 **Scope.** Only one turbine configuration (6 blades, solidity 0.625) was simulated. The original thesis compared five configurations (4 to 8 blades) to study the effect of solidity. This project therefore tests whether CFD can reproduce the performance of a single turbine. It does not show that CFD captures the solidity trend, which would require at least a second configuration.
 
-The final results showed variation from 5% to 10% for the torque, 1% to 3% for pressure delta and 8 to 14 for the aerodynamic efficiency.
+The torque coefficient predicted by CFD agrees with the experiment with a mean absolute relative error of **16 %** over the evaluated range, as expected for a steady RANS model.
 
 
 [View the CFD project on the website](https://wells.serben-di-pupo.com)
