@@ -97,7 +97,7 @@ A grid independence study was also performed using four mesh resolutions, rangin
 
 The simulations were performed in **ANSYS Fluent** using:
 - Pressure-based, steady-state solver
-- SST \ k-ω turbulence model
+- k-ω SST turbulence model
 - Multiple Reference Frame (MRF)
 - Velocity inlet and pressure outlet
 - No-slip blade walls
