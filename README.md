@@ -6,7 +6,7 @@ This project is a numerical replication of experimental Wells turbine performanc
 
 A single configuration from the experimental campaign was selected. The same turbine geometry, rotational speed, inlet conditions and fluid properties were implemented in ANSYS Fluent using a steady Multiple Reference Frame (MRF) approach.
 
-**Results.** Over the simulated range, the CFD torque and pressure coefficients agree with the experiment with a mean absolute relative error of **16.1 %** and **8.4 %** respectively (φ = 0 and points where the experimental value is below 10 % of its peak are excluded). See [Comparison with Experiment](#9-comparison-with-experiment) for the definition of the metric and the limits of the comparison.
+**Results.** Over the simulated range, the CFD torque and pressure coefficients agree with the experiment with a mean absolute relative error of **16.1 %** and **8.4 %** respectively.
 
 **Scope.** Only one configuration (6 blades, solidity 0.625) was simulated, while the thesis compared five (4 to 8 blades) to study the effect of solidity. This project therefore tests whether CFD can reproduce the performance of a single turbine. It does not show that CFD captures the solidity trend, which would require at least a second configuration.
 
