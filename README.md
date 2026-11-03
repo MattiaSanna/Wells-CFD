@@ -106,9 +106,6 @@ The simulations were performed in **ANSYS Fluent** using:
 The MRF approach allowed the rotating turbine to be simulated within a stationary computational domain.
 
 The exact boundary conditions of the experimental tests were replicated:
-## 6. CFD Setup
-
-The simulations were performed in **ANSYS Fluent**. The boundary conditions replicate the experimental tests.
 
 | Category | Setting | Value |
 |---|---|---|
