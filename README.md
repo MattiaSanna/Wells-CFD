@@ -91,7 +91,7 @@ The mesh included:
 - Growth rate of 1.2
 - Target y+ ≈ 1
 
-A grid independence study was also performed using four mesh resolutions, ranging from 330 thousand to 1 million cells.
+A grid independence study was also performed using three mesh resolutions, ranging from 330 thousand to 1 million cells.
 
 ## 6. CFD Setup
 
