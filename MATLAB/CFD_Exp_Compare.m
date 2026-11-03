@@ -40,23 +40,6 @@ efficency = (torque_aero .* omega) ./ (deltaP .* Q);
 %U at the avergae blade span
 U_aver = 2 * pi * r_med * omega_rpm / 60;
 
-%velocity magnitude
-
-
-C_star = sqrt(2 .* abs(deltaP) ./ rho);
-W2s = sqrt(U_aver.^2 + C_star.^2);
-C2u = -(torque_aero .* omega) ./ (U_aver .* piston_vel .* rho .* Ap);
-C2ax = (piston_vel .* Ap) ./ At;
-C2 = sqrt(C2u.^2 + C2ax.^2);
-W2 = sqrt(C2ax.^2 + (U_aver + C2u).^2);
-cosB2 = (U_aver + C2u) ./ W2;
-W1=  sqrt(U_aver.^2 + air_velocity.^2 );
-
-%Velocity reduction coefficients
-
-
-
-%losses
 
 
 %lets plot
