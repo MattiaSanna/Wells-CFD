@@ -159,27 +159,6 @@ The offset is a single-point correction at zero flow, so agreement at φ = 0 is 
 
 **Limits of the comparison.** The comparison covers a single configuration and does not include experimental uncertainty bands, so it shows agreement within the stated errors and is not a general validation of the model.
 
-## 10. Limitations and Future Work
-
-**Stall and steady-state modelling.** The simulations are steady RANS. MRF suits this geometry because there are no stationary blade rows, so the main limitation of the steady assumption is separated flow. The turbine stalls at φ ≈ 0.21 and several simulated points lie beyond it. Post-stall separation on the suction side is unsteady and three-dimensional, and a steady solution can only approximate its time-averaged effect, so predictions in that range are less reliable.
-
-**Turbulence and transition.** At 3600 rpm the chord Reynolds number is about 2 × 10⁵, where laminar separation bubbles and laminar-turbulent transition can influence where the flow separates. The SST k-ω model is fully turbulent and cannot capture transition, which may shift the predicted stall onset.
-
-**Periodicity.** The 60° sector assumes identical flow in every blade passage, which may not hold in stalled flow.
-
-**Mesh verification.** The mesh study was done at one attached-flow point and not repeated post-stall. The refinement ratio between the two finest meshes is small (about 1.06), so the GCI is only a conservative estimate.
-
-**Experimental reference and offset.** Experimental uncertainty is not included in the comparison. The torque comparison also depends on the constant 0.03 N·m offset, which is not negligible next to the torque at the peak-efficiency point (about 0.29 N·m).
-
-**Future work**
-
-- Simulate a second configuration (4 or 8 blades, i.e. 90° or 45° sectors) to test whether CFD reproduces the solidity trend.
-- Add a transition model, and a transient simulation for the post-stall points.
-- Repeat the mesh study in the stalled regime with a larger refinement ratio and compute a full GCI.
-- Automate the Fluent sweep and the export of the results (journal file), replacing the manual transcription.
-
-<!-- TODO (optional, strongly recommended): add a "Flow field" section with mid-span pressure and relative-velocity contours at pre-stall and post-stall φ. -->
-
 ## Repository Structure
 
 | Folder | Content |
