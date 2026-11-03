@@ -4,7 +4,7 @@
 
 This project focuses on the numerical replication of experimental Wells turbine performance, based on my bachelor thesis *The Effect of Solidity on Wells Turbine Performance*.
 
-A single configuration from the experimental campaign was selected for numerical replication. The same turbine geometry, rotational speed, inlet conditions and fluid properties were implemented in ANSYS Fluent using a steady Multiple Reference Frame (MRF) approach. 
+**Scope.** Only one turbine configuration (6 blades, solidity 0.625) was simulated. The original thesis compared five configurations (4 to 8 blades) to study the effect of solidity. This project therefore tests whether CFD can reproduce the performance of a single turbine. It does not show that CFD captures the solidity trend, which would require at least a second configuration.
 
 The final results showed variation from 5% to 10% for the torque, 1% to 3% for pressure delta and 8 to 14 for the aerodynamic efficiency.
 
